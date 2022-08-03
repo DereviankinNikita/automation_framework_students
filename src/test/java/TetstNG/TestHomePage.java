@@ -11,5 +11,5 @@ public class TestHomePage extends TestInit {
         urls().gotoHome();
     }
 
-    //женя гей(не я)
+    //женя не гей (я тоже)
 }
