@@ -1,4 +1,4 @@
-package Holder;
+package TetstNG;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
@@ -11,10 +11,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+
 import java.time.Duration;
 
 public class TestInit {
-    public WebDriver driver;
+    WebDriver driver;
     Actions action ;
 
 

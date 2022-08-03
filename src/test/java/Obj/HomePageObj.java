@@ -1,7 +1,6 @@
 package Obj;
 
 import Holder.DriverHolder;
-import Holder.TestInit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 

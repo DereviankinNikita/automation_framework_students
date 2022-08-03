@@ -18,14 +18,9 @@ public class DriverHolder {
     Duration timeToWait = Duration.ofSeconds(15);
 
 
-
-
     public DriverHolder(WebDriver driver) {
         this.driver = driver;
     }
-
-
-
     protected WebElement getElByXpath(String xpath) {
         return (new WebDriverWait(driver, timeToWait)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath))));
