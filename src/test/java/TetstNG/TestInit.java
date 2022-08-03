@@ -1,5 +1,7 @@
 package TetstNG;
 
+import Holder.Urls;
+import Obj.HomePageObj;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -18,12 +20,6 @@ public class TestInit {
     WebDriver driver;
     Actions action ;
 
-
-    public String website = "http://demowebshop.tricentis.com/";
-   protected void gotoHome()
-    {
-        driver.get(website);
-    }
     @BeforeClass
     void setupTest()
     {
@@ -59,5 +55,12 @@ public class TestInit {
         {
             e.printStackTrace();
         }
+    }
+    //constructors
+    protected Urls urls(){
+       return new Urls(driver);
+    }
+    protected HomePageObj homePageObj(){
+       return new HomePageObj(driver);
     }
 }

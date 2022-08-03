@@ -8,7 +8,6 @@ public class TestHomePage extends TestInit {
     @Test
     public void check()
     {
-        DriverHolder driverHolder = new DriverHolder(driver);
-        gotoHome();
+        urls().gotoHome();
     }
 }
