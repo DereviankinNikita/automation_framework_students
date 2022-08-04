@@ -9,8 +9,5 @@
         <module name="automation_framework_students" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="automation_framework_students" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

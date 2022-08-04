@@ -10,4 +10,6 @@ public class TestHomePage extends TestInit {
         urls().gotoHome();
         homePageObjHelper().RegClick();
     }
+
+    //женя не гей (я тоже)
 }
