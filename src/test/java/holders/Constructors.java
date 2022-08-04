@@ -5,10 +5,13 @@ import org.openqa.selenium.interactions.Actions;
 import pageObjects.HomePageObj;
 import pageObjects.HomePageObjHelper;
 
-public class PageConstructors {
+public class Constructors {
     protected WebDriver driver;
     protected Actions action ;
 
+    public void goToSite(){
+        driver.get(homePageObj().mainUrl);
+    }
     //constructors
 
     protected HomePageObj homePageObj(){

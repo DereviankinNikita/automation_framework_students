@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public class TestInit extends PageConstructors {
+public class TestInit extends Constructors {
    public WebDriver driver;
     Actions action ;
 

@@ -31,6 +31,10 @@ public class DriverHolder extends VariablesForTests{
         return (new WebDriverWait(driver, timeToWait)
                 .until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(xpath))));
     }
+    public void goToSite(String site){
+        driver.get(site);
+    }
+
     //waits
     protected WebElement waitForElementClick(String element) {
         return ( new WebDriverWait(driver, timeToWait)

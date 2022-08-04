@@ -15,10 +15,10 @@ public class HomePageObj extends DriverHolder {
     private String LogButton = "//*[@class='ico-login']";
 
 
-    public WebElement SubscribeBtn()
+    public WebElement getSubscribeBtn()
     {
         return getElByXpath(SubscribeButton);
     }
-    public  WebElement RegisterBtn(){return getElByXpath(RegisterButton);}
-    public  WebElement LogBtn(){return getElByXpath(LogButton);}
+    public  WebElement getRegisterBtn(){return getElByXpath(RegisterButton);}
+    public  WebElement getLogBtn(){return getElByXpath(LogButton);}
 }
