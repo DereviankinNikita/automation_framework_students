@@ -1,7 +1,7 @@
-package TetstNG;
+package testNG;
 
 import holders.TestInit;
-import PageObjects.HomePageObjHelper;
+import pageObjects.HomePageObjHelper;
 import org.testng.annotations.Test;
 
 public class TestHomePage extends TestInit {
@@ -11,6 +11,4 @@ public class TestHomePage extends TestInit {
         HomePageObjHelper homePageObjHelper = new HomePageObjHelper(driver);
         homePageObjHelper.goToHomePage();
     }
-
-    //женя не гей (я тоже)
 }

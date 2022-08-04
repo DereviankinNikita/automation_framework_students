@@ -1,7 +1,7 @@
 package holders;
 
-import PageObjects.HomePageObj;
-import PageObjects.HomePageObjHelper;
+import pageObjects.HomePageObj;
+import pageObjects.HomePageObjHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public class TestInit {
+public class TestInit extends PageConstructors {
    public WebDriver driver;
     Actions action ;
 

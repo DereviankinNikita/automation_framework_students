@@ -1,4 +1,4 @@
-package PageObjects;
+package pageObjects;
 
 import holders.DriverHolder;
 import org.openqa.selenium.WebDriver;
@@ -20,5 +20,5 @@ public class HomePageObj extends DriverHolder {
         return getElByXpath(SubscribeButton);
     }
     public  WebElement RegisterBtn(){return getElByXpath(RegisterButton);}
-    public  WebElement LogBtn(){return getElByXpath(RegisterButton);}
+    public  WebElement LogBtn(){return getElByXpath(LogButton);}
 }
