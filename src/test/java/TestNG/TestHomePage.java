@@ -1,4 +1,4 @@
-package TetstNG;
+package TestNG;
 
 import org.testng.annotations.Test;
 
@@ -11,5 +11,4 @@ public class TestHomePage extends TestInit {
         homePageObjHelper().RegClick();
     }
 
-    //женя не гей (я тоже)
 }
