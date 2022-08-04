@@ -1,10 +1,12 @@
 package TestNG;
 
+import Holder.TestInit;
 import org.testng.annotations.Test;
 
-public class TestLogPage extends TestInit{
+public class TestLogPage extends TestInit {
     @Test
-    void LogCheckSmoke(){
+    void logCheckSmoke(){
+
 
     }
 }

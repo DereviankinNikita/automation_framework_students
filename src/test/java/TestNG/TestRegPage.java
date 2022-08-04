@@ -3,11 +3,9 @@ package TestNG;
 import Holder.TestInit;
 import org.testng.annotations.Test;
 
-public class TestHomePage extends TestInit {
-
+public class TestRegPage extends TestInit {
     @Test
-    public void check()
-    {
+    void reg(){
         urls().gotoHome();
         homePageObjHelper().regClick();
     }

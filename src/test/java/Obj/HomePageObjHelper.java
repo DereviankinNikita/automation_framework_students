@@ -6,7 +6,7 @@ public class HomePageObjHelper extends HomePageObj{
     public HomePageObjHelper(WebDriver driver) {
         super(driver);
     }
-    public void RegClick(){
+    public void regClick(){
         RegisterBtn().click();
     }
 }

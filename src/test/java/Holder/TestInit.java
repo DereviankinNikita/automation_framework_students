@@ -1,5 +1,6 @@
-package TestNG;
+package Holder;
 
+import Holder.PageConstructors;
 import Holder.Urls;
 import Obj.HomePageObj;
 import Obj.HomePageObjHelper;
@@ -15,12 +16,12 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public class TestInit {
-    WebDriver driver;
-    Actions action ;
+public class TestInit extends PageConstructors {
+    protected WebDriver driver;
+    protected Actions action ;
 
     @BeforeClass
-    void setupTest()
+    public void setupTest()
     {
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
@@ -40,13 +41,13 @@ public class TestInit {
     }
     //
     @AfterClass
-    void tearDown()
+    public void tearDown()
     {
         //driver.quit();
     }
 
     //wait
-    void sleep(int s)
+    public void sleep(int s)
     {
         try {
             Thread.sleep(s*1000);

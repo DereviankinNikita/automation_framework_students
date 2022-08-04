@@ -21,6 +21,7 @@ public class DriverHolder {
     public DriverHolder(WebDriver driver) {
         this.driver = driver;
     }
+    //gets
     protected WebElement getElByXpath(String xpath) {
         return (new WebDriverWait(driver, timeToWait)
                 .until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath))));
@@ -56,7 +57,4 @@ public class DriverHolder {
                 wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
         return null;
     }
-
-
-
 }
