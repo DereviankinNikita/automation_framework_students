@@ -1,6 +1,6 @@
-package Obj;
+package PageObjects;
 
-import Holder.DriverHolder;
+import holders.DriverHolder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
