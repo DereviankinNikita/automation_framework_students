@@ -8,5 +8,6 @@ public class TestLogPage extends TestInit {
     void logCheckSmoke(){
 
 
+
     }
 }
