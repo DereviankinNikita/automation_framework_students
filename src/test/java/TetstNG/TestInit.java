@@ -2,6 +2,7 @@ package TetstNG;
 
 import Holder.Urls;
 import Obj.HomePageObj;
+import Obj.HomePageObjHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -62,5 +63,8 @@ public class TestInit {
     }
     protected HomePageObj homePageObj(){
        return new HomePageObj(driver);
+    }
+    protected HomePageObjHelper homePageObjHelper(){
+        return new HomePageObjHelper(driver);
     }
 }

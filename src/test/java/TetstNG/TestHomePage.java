@@ -1,6 +1,5 @@
 package TetstNG;
 
-import Holder.DriverHolder;
 import org.testng.annotations.Test;
 
 public class TestHomePage extends TestInit {
@@ -9,5 +8,6 @@ public class TestHomePage extends TestInit {
     public void check()
     {
         urls().gotoHome();
+        homePageObjHelper().RegClick();
     }
 }

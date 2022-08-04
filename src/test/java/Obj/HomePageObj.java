@@ -11,10 +11,14 @@ public class HomePageObj extends DriverHolder {
     }
 
     private String SubscribeButton = "//input[@id='newsletter-subscribe-button']";
+    private String RegisterButton = "//*[@class='ico-register']";
+    private String LogButton = "//*[@class='ico-login']";
 
 
     public WebElement SubscribeBtn()
     {
         return getElByXpath(SubscribeButton);
     }
+    public  WebElement RegisterBtn(){return getElByXpath(RegisterButton);}
+    public  WebElement LogBtn(){return getElByXpath(RegisterButton);}
 }
