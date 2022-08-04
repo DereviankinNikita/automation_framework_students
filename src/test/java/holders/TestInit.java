@@ -1,8 +1,7 @@
-package TetstNG;
+package holders;
 
-import Holder.Urls;
-import Obj.HomePageObj;
-import Obj.HomePageObjHelper;
+import PageObjects.HomePageObj;
+import PageObjects.HomePageObjHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -10,20 +9,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 
 
 import java.time.Duration;
 
 public class TestInit {
-    WebDriver driver;
+   public WebDriver driver;
     Actions action ;
 
     @BeforeClass
-    void setupTest()
-    {
+    public void setupTest() {
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -58,9 +54,7 @@ public class TestInit {
         }
     }
     //constructors
-    protected Urls urls(){
-       return new Urls(driver);
-    }
+
     protected HomePageObj homePageObj(){
        return new HomePageObj(driver);
     }

@@ -1,4 +1,4 @@
-package Holder;
+package holders;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,14 +12,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class DriverHolder {
-    WebDriver driver;
+public class DriverHolder extends VariablesForTests{
+
+    protected WebDriver driver;
     Actions actions;
     Duration timeToWait = Duration.ofSeconds(15);
 
 
     public DriverHolder(WebDriver driver) {
         this.driver = driver;
+        setConfigFromPropertyFile();
     }
     protected WebElement getElByXpath(String xpath) {
         return (new WebDriverWait(driver, timeToWait)
@@ -56,6 +58,13 @@ public class DriverHolder {
                 wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
         return null;
     }
+
+    public DriverHolder goToHomePage(){
+        driver.get(mainUrl);
+        waitForPageLoad();
+        return new DriverHolder(driver);
+    }
+
 
 
 
