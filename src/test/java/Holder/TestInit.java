@@ -66,4 +66,10 @@ public class TestInit extends PageConstructors {
     protected HomePageObjHelper homePageObjHelper(){
         return new HomePageObjHelper(driver);
     }
+    public String website = "http://demowebshop.tricentis.com/";
+
+    public void gotoHomePage()
+    {
+        driver.get(website);
+    }
 }

@@ -9,4 +9,8 @@ public class HomePageObjHelper extends HomePageObj{
     public void regClick(){
         RegisterBtn().click();
     }
+    public void clickGiftCards(){
+        giftCardsBtn().click();
+    }
+
 }

@@ -11,8 +11,6 @@ public class TestHomePage extends TestInit {
         urls().gotoHome();
         homePageObjHelper().regClick();
     }
-    public void rtrt(){
-        System.out.println("sdsdsdadad");
-    }
+
 
 }

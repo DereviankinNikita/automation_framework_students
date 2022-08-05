@@ -13,6 +13,7 @@ public class HomePageObj extends DriverHolder {
     private String SubscribeButton = "//input[@id='newsletter-subscribe-button']";
     private String RegisterButton = "//*[@class='ico-register']";
     private String LogButton = "//*[@class='ico-login']";
+    private String giftCardsButton = "//*[@href='/gift-cards']";
 
 
     public WebElement SubscribeBtn()
@@ -21,4 +22,7 @@ public class HomePageObj extends DriverHolder {
     }
     public  WebElement RegisterBtn(){return getElByXpath(RegisterButton);}
     public  WebElement LogBtn(){return getElByXpath(RegisterButton);}
+    public WebElement giftCardsBtn(){
+        return  getElsByXpath(giftCardsButton).get(0);
+    }
 }
