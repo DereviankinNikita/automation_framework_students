@@ -1,5 +1,6 @@
 package holders;
 
+import org.testng.annotations.BeforeMethod;
 import pageObjects.HomePageElements;
 import pageObjects.HomePageHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -10,15 +11,17 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import pageObjects.RegPageElements;
+import pageObjects.RegPageHelper;
 
 
 import java.time.Duration;
 
 public class TestInit extends Constructors {
-   public WebDriver driver;
-    Actions action ;
+    public WebDriver driver;
+    public Actions action ;
 
-    @BeforeClass
+    @BeforeMethod
     public void setupTest() {
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
@@ -53,12 +56,23 @@ public class TestInit extends Constructors {
             e.printStackTrace();
         }
     }
+    public void goToSite(){
+        driver.get(regPageElements().mainUrl);
+    }
+
     //constructors
 
     protected HomePageElements homePageObj(){
-       return new HomePageElements(driver);
+        return new HomePageElements(driver);
     }
     protected HomePageHelper homePageObjHelper(){
         return new HomePageHelper(driver);
+    }
+    //reg
+    protected RegPageElements regPageElements(){
+        return new RegPageElements(driver);
+    }
+    protected RegPageHelper regPageHelper(){
+        return new RegPageHelper(driver);
     }
 }

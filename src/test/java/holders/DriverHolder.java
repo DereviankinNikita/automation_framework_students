@@ -15,7 +15,7 @@ import java.util.List;
 public class DriverHolder extends VariablesForTests{
 
     protected WebDriver driver;
-    Actions actions;
+    protected Actions actions;
     Duration timeToWait = Duration.ofSeconds(15);
 
 

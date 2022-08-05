@@ -11,9 +11,11 @@ public class Constructors {
     protected WebDriver driver;
     protected Actions action ;
 
+
     public void goToSite(){
-        driver.get(homePageObj().mainUrl);
+        driver.get(regPageElements().mainUrl);
     }
+
     //constructors
 
     protected HomePageElements homePageObj(){
