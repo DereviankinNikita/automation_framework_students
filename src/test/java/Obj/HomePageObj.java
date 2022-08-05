@@ -14,15 +14,14 @@ public class HomePageObj extends DriverHolder {
     private String RegisterButton = "//*[@class='ico-register']";
     private String LogButton = "//*[@class='ico-login']";
     private String giftCardsButton = "//*[@href='/gift-cards']";
+    private String computersButton = "//*[@href='/computers']";
 
 
-    public WebElement SubscribeBtn()
-    {
-        return getElByXpath(SubscribeButton);
-    }
+
+
+    public WebElement SubscribeBtn() {return getElByXpath(SubscribeButton); }
     public  WebElement RegisterBtn(){return getElByXpath(RegisterButton);}
     public  WebElement LogBtn(){return getElByXpath(RegisterButton);}
-    public WebElement giftCardsBtn(){
-        return  getElsByXpath(giftCardsButton).get(0);
-    }
+    public WebElement getGiftCardsBtn(){return  getElsByXpath(giftCardsButton).get(0);}
+    public WebElement getComputersButton(){return  getElsByXpath(computersButton).get(0);}
 }

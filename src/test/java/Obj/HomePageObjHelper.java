@@ -10,7 +10,10 @@ public class HomePageObjHelper extends HomePageObj{
         RegisterBtn().click();
     }
     public void clickGiftCards(){
-        giftCardsBtn().click();
+        getGiftCardsBtn().click();
+    }
+    public void clickComputersButton(){
+        getComputersButton().click();
     }
 
 }
