@@ -21,7 +21,7 @@ public class TestInit extends Constructors {
     public WebDriver driver;
     public Actions action ;
 
-    @BeforeMethod
+    @BeforeClass
     public void setupTest() {
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
