@@ -8,15 +8,21 @@ public class RegPageElements extends DriverHolder {
     public RegPageElements(WebDriver driver) {
         super(driver);
     }
+    //locators
     private String GenderMale = "//*[@id='gender-male']";
     private String GenderFemale = "//*[@id='gender-female']";
     private String FirstNameInput = "(//*[@class=\"text-box single-line\"])[1]";
     private String LastNameInput = "(//*[@class=\"text-box single-line\"])[2]";
-    private String EmailInput = "(//*[@class=\"text-box single-line\"])[3]";
+    private String EmailInput = "(//*[@id=\"Email\"])";
     private String PassInput = "(//*[@class=\"text-box single-line password\"])[1]";
     private String PassConfirmInput = "(//*[@class=\"text-box single-line password\"])[2]";
+    //attributes
+    protected String innerText ="innerText";
+
     //Btn
     private String RegisterButton = "//*[@id=\"register-button\"]";
+    //nextPage
+    private String Result = "//*[@class=\"result\"]";
 
     //WebElements
     public WebElement getGMale(){return getElByXpath(GenderMale);}
@@ -26,6 +32,8 @@ public class RegPageElements extends DriverHolder {
     public WebElement getEmailField(){return getElByXpath(EmailInput);}
     public WebElement getPassField(){return getElByXpath(PassInput);}
     public WebElement getPassConfField(){return getElByXpath(PassConfirmInput);}
-    public WebElement getRegisterBtn9(){return getElByXpath(RegisterButton);}
+    public WebElement getRegisterBtn(){return getElByXpath(RegisterButton);}
+    //nextPage
+    public WebElement getResult(){return getElByXpath(Result);}
 
 }
