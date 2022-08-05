@@ -11,11 +11,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 
 public class DriverHolder extends VariablesForTests{
 
     protected WebDriver driver;
-    Actions actions;
+    protected Actions actions;
     Duration timeToWait = Duration.ofSeconds(15);
 
 
@@ -31,6 +32,10 @@ public class DriverHolder extends VariablesForTests{
         return (new WebDriverWait(driver, timeToWait)
                 .until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(xpath))));
     }
+    public void goToSite(String site){
+        driver.get(site);
+    }
+
     //waits
     protected WebElement waitForElementClick(String element) {
         return ( new WebDriverWait(driver, timeToWait)
@@ -57,6 +62,20 @@ public class DriverHolder extends VariablesForTests{
         new WebDriverWait(driver, timeToWait).until((ExpectedCondition<Boolean>)
                 wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
         return null;
+    }
+    public String randomString(int length) {
+
+        int leftLimit = 97; // letter 'a'
+        int rightLimit = 122; // letter 'z'
+        int targetStringLength = length;
+        Random random = new Random();
+        StringBuilder buffer = new StringBuilder(targetStringLength);
+        for (int i = 0; i < targetStringLength; i++) {
+            int randomLimitedInt = leftLimit + (int)
+                    (random.nextFloat() * (rightLimit - leftLimit + 1));
+            buffer.append((char) randomLimitedInt);
+        }
+        return buffer.toString();
     }
 
     public DriverHolder goToHomePage(){

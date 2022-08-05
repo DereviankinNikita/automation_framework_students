@@ -1,12 +1,12 @@
-package PageObjects;
+package pageObjects;
 
 import holders.DriverHolder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class HomePageObj extends DriverHolder {
+public class HomePageElements extends DriverHolder {
 
-    public HomePageObj(WebDriver driver) {
+    public HomePageElements(WebDriver driver) {
         super(driver);
     }
 
@@ -15,10 +15,10 @@ public class HomePageObj extends DriverHolder {
     private String LogButton = "//*[@class='ico-login']";
 
 
-    public WebElement SubscribeBtn()
+    public WebElement getSubscribeBtn()
     {
         return getElByXpath(SubscribeButton);
     }
-    public  WebElement RegisterBtn(){return getElByXpath(RegisterButton);}
-    public  WebElement LogBtn(){return getElByXpath(RegisterButton);}
+    public  WebElement getRegisterBtn(){return getElByXpath(RegisterButton);}
+    public  WebElement getLogBtn(){return getElByXpath(LogButton);}
 }
