@@ -2,8 +2,8 @@ package holders;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import pageObjects.HomePageObj;
-import pageObjects.HomePageObjHelper;
+import pageObjects.HomePageElements;
+import pageObjects.HomePageHelper;
 
 public class Constructors {
     protected WebDriver driver;
@@ -14,11 +14,11 @@ public class Constructors {
     }
     //constructors
 
-    protected HomePageObj homePageObj(){
-        return new HomePageObj(driver);
+    protected HomePageElements homePageObj(){
+        return new HomePageElements(driver);
     }
-    protected HomePageObjHelper homePageObjHelper(){
-        return new HomePageObjHelper(driver);
+    protected HomePageHelper homePageObjHelper(){
+        return new HomePageHelper(driver);
     }
 
 }

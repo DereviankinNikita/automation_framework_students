@@ -1,14 +1,14 @@
 package testNG;
 
 import holders.TestInit;
-import pageObjects.HomePageObjHelper;
+import pageObjects.HomePageHelper;
 import org.testng.annotations.Test;
 
 public class TestHome extends TestInit {
 
     @Test
     public void check() {
-        HomePageObjHelper homePageObjHelper = new HomePageObjHelper(driver);
+        HomePageHelper homePageObjHelper = new HomePageHelper(driver);
         homePageObjHelper.goToHomePage();
     }
 }

@@ -2,8 +2,8 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
-public class HomePageObjHelper extends HomePageObj{
-    public HomePageObjHelper(WebDriver driver) {
+public class HomePageHelper extends HomePageElements {
+    public HomePageHelper(WebDriver driver) {
         super(driver);
     }
     public void regClick(){

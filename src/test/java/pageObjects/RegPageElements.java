@@ -4,8 +4,8 @@ import holders.DriverHolder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class RegPageObj extends DriverHolder {
-    public RegPageObj(WebDriver driver) {
+public class RegPageElements extends DriverHolder {
+    public RegPageElements(WebDriver driver) {
         super(driver);
     }
     private String GenderMale = "//*[@id='gender-male']";

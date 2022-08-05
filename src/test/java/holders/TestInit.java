@@ -1,7 +1,7 @@
 package holders;
 
-import pageObjects.HomePageObj;
-import pageObjects.HomePageObjHelper;
+import pageObjects.HomePageElements;
+import pageObjects.HomePageHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -55,10 +55,10 @@ public class TestInit extends Constructors {
     }
     //constructors
 
-    protected HomePageObj homePageObj(){
-       return new HomePageObj(driver);
+    protected HomePageElements homePageObj(){
+       return new HomePageElements(driver);
     }
-    protected HomePageObjHelper homePageObjHelper(){
-        return new HomePageObjHelper(driver);
+    protected HomePageHelper homePageObjHelper(){
+        return new HomePageHelper(driver);
     }
 }

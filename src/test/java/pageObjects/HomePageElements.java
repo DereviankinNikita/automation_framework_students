@@ -4,9 +4,9 @@ import holders.DriverHolder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class HomePageObj extends DriverHolder {
+public class HomePageElements extends DriverHolder {
 
-    public HomePageObj(WebDriver driver) {
+    public HomePageElements(WebDriver driver) {
         super(driver);
     }
 
