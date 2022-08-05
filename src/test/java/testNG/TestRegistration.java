@@ -19,6 +19,7 @@ public class TestRegistration extends TestInit {
         regPageHelper().setGmailRandomly();
         regPageHelper().setPassRandomly();
         regPageHelper().RegBtnClick();
+        System.out.println(regPageHelper().getResultAttributeInnerText());
         Assert.assertEquals(regPageHelper().getResultAttributeInnerText(),ResultTrue);
     }
 
