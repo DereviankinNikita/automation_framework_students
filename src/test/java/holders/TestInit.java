@@ -17,11 +17,11 @@ import pageObjects.RegPageHelper;
 
 import java.time.Duration;
 
-public class TestInit extends Constructors {
+public class TestInit {
     public WebDriver driver;
     public Actions action ;
 
-    @BeforeMethod
+    @BeforeClass
     public void setupTest() {
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
