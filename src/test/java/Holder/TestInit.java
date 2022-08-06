@@ -43,7 +43,7 @@ public class TestInit extends PageConstructors {
     @AfterClass
     public void tearDown()
     {
-        //driver.quit();
+        driver.quit();
     }
 
     //wait
