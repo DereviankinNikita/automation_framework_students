@@ -18,22 +18,22 @@ import org.openqa.selenium.WebElement;
 
 
         public WebElement getHeaderRegister(){
-            return getElementByXpath(headerRegister);
+            return getElByXpath(headerRegister);
         }
         public WebElement getHeaderLogin(){
-            return getElementsByXpath(headerLogin);
+            return getElByXpath(headerLogin);
         }
         public WebElement getHeaderShoppingCart(){
-            return getElementByXpath(headerShoppingCart);
+            return getElByXpath(headerShoppingCart);
         }
         public WebElement getHeaderWishList(){
-            return getElementByXpath(headerWishList);
+            return getElByXpath(headerWishList);
         }
         public WebElement getHeaderSearchBar(){
-            return getElementByXpath(headerSearchBar);
+            return getElByXpath(headerSearchBar);
         }
         public WebElement getHeaderSearchBtn(){
-            return getElementByXpath(headerSearchBtn);
+            return getElByXpath(headerSearchBtn);
         }
 
     }
