@@ -53,4 +53,61 @@ public class TestCategories extends TestInit {
         String expectedStringAccessories = "Accessories";
         assertTrue(actualStringAccessories.contains(expectedStringAccessories));
     }
+    @Test
+    public void buttonElectronics(){
+        CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
+        categoriesPageHelper.clickCategoryElectronics();
+        String actualStringElectronics = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
+        String expectedStingElectronics = "Electronics";
+        assertTrue(actualStringElectronics.contains(expectedStingElectronics));
+    }
+    @Test
+    public void buttonCameraPhoto(){
+        CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
+        categoriesPageHelper.clickSubcategoryCameraPhoto();
+        String actualStringCameraPhoto = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
+        String expectedStringCameraPhoto = "Camera, photo";
+        assertTrue(actualStringCameraPhoto.contains(expectedStringCameraPhoto));
+    }
+    @Test
+    public void buttonCellPhones(){
+        CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
+        categoriesPageHelper.clickSubcategoryCellPhones();
+        String actualStringCellPhones = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
+        String expectedStringCellPhones = "Cell phones";
+        assertTrue(actualStringCellPhones.contains(expectedStringCellPhones));
+    }
+    @Test
+    public void buttonApparelAndShoes(){
+        CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
+        categoriesPageHelper.clickCategoryApparelEndShoes();
+        String actualStringApparelAndShoes = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
+        String expectedStringApparelAndShoes = "Apparel & Shoes";
+        assertTrue(actualStringApparelAndShoes.contains(expectedStringApparelAndShoes));
+    }
+    @Test
+    public void buttonDigitalDownloads(){
+        CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
+        categoriesPageHelper.clickDigitalDownloads();
+        String actualStringDigitalDownloads = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
+        String expectedStingDigitalDownloads = "Digital downloads";
+        assertTrue(actualStringDigitalDownloads.contains(expectedStingDigitalDownloads));
+    }
+    @Test
+    public void buttonJewelry(){
+        CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
+        categoriesPageHelper.clickJewelry();
+        String actualStringJewelry = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
+        String expectedStringJewelry = "Jewelry";
+        assertTrue(actualStringJewelry.contains(expectedStringJewelry));
+        }
+    @Test
+    public void buttonGiftCards(){
+        CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
+        categoriesPageHelper.clickGiftCards();
+        String actualStringGiftCards = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
+        String expectedStringGiftCards = "Gift Cards";
+        assertTrue(actualStringGiftCards.contains(expectedStringGiftCards));
+    }
+
 }

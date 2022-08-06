@@ -26,4 +26,27 @@ public class CategoriesPageHelper extends CategoriesPageObj {
         getCategoriesComputersButton().click();
         getSubcategoriesAccessoriesButton().click();
     }
+    public void clickCategoryElectronics(){
+        getCategoriesElectronicsButton().click();
+    }
+    public void clickSubcategoryCameraPhoto(){
+        getCategoriesElectronicsButton().click();
+        getSubcategoriesCameraPhotoButton().click();
+    }
+    public void clickSubcategoryCellPhones(){
+        getCategoriesElectronicsButton().click();
+        getSubcategoriesCellPhoneButton().click();
+    }
+    public void clickCategoryApparelEndShoes(){
+        getCategoriesApparelAndShoesButton().click();
+    }
+    public void clickDigitalDownloads(){
+        getCategoriesDigitalDownloadsButton().click();
+    }
+    public void clickJewelry(){
+        getCategoriesJewelryButton().click();
+    }
+    public void clickGiftCards(){
+        getCategoriesGiftCarts().click();
+    }
 }
