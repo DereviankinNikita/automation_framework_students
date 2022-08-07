@@ -46,7 +46,7 @@ public class FilterByPriceObj extends DriverHolder {
         return getElByXpath(buttonDesktopsPriceRangeAverage);
     }
     public WebElement getButtonDesktopsPriceRangeMax(){
-        return getElByXpath(buttonDesktopsPriceRangeMax)
+        return getElByXpath(buttonDesktopsPriceRangeMax);
     }
 
     public WebElement getButtonAccessoriesPriceRangeMin(){

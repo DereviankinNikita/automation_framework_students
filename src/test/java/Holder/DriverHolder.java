@@ -13,7 +13,7 @@ import java.time.Duration;
 import java.util.List;
 
 public class DriverHolder {
-    WebDriver driver;
+    public WebDriver driver;
     Actions actions;
     Duration timeToWait = Duration.ofSeconds(15);
 

@@ -40,11 +40,11 @@ public class TestInit extends PageConstructors {
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
     }
     //
-    @AfterClass
-    public void tearDown()
-    {
-        driver.quit();
-    }
+//    @AfterClass
+//    public void tearDown()
+//    {
+//        driver.quit();
+//    }
 
     //wait
     public void sleep(int s)
