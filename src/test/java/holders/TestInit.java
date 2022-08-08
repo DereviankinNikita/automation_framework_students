@@ -1,8 +1,7 @@
 package holders;
 
 import org.testng.annotations.BeforeMethod;
-import pageObjects.HomePageElements;
-import pageObjects.HomePageHelper;
+import pageObjects.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -11,8 +10,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import pageObjects.RegPageElements;
-import pageObjects.RegPageHelper;
 
 
 import java.time.Duration;
@@ -76,4 +73,7 @@ public class TestInit {
     protected RegPageHelper regPageHelper(){
         return new RegPageHelper(driver);
     }
+    //log
+    protected LogPageElements logPageElements(){return new LogPageElements(driver);}
+    protected LogPageHelper logPageHelper(){return new LogPageHelper(driver);}
 }

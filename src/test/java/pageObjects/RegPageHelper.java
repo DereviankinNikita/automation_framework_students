@@ -2,9 +2,7 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
-import java.nio.charset.Charset;
 import java.time.Clock;
-import java.util.Random;
 
 public class RegPageHelper extends RegPageElements {
     public RegPageHelper(WebDriver driver) {
@@ -36,12 +34,12 @@ public class RegPageHelper extends RegPageElements {
         getEmailField().sendKeys(randomMail());
     }
     //pass
-    public String randomPass(){
+    public String setRandomPass(){
         return Clock.systemUTC().instant().toString()
                 .replaceAll("[^0-9]", "");
     }
     public void setPassRandomly(){
-        String pass = randomPass();
+        String pass = setRandomPass();
         getPassField().sendKeys(pass);
         getPassConfField().sendKeys(pass);
     }

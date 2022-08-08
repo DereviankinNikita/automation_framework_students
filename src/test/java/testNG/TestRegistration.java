@@ -9,8 +9,13 @@ import java.util.Random;
 
 public class TestRegistration extends TestInit {
     private String ResultTrue="Your registration completed";
+
     @Test
-    void regCheck() {
+    public void justStart(){
+        goToSite();
+    }
+    @Test
+    public void regCheck() {
         goToSite();
         homePageObjHelper().regClick();
         regPageHelper().GenderChoose(regPageHelper().Male);
