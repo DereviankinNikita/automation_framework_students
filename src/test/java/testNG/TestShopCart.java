@@ -31,10 +31,16 @@ public class TestShopCart extends TestInit {
         addtoCartHelper.addBooktoCart();
         addtoCartHelper.goToShopCart();
         checkCoutriesHelper.uaCheck();
+        String URLUA = driver.getCurrentUrl();
+        Assert.assertEquals(URLUA, "http://demowebshop.tricentis.com/login/checkoutasguest?returnUrl=%2Fcart");
         addtoCartHelper.goToShopCart();
-        checkCoutriesHelper.uaCheck();
+        checkCoutriesHelper.usaCheck();
+        String URLUSA = driver.getCurrentUrl();
+        Assert.assertEquals(URLUSA, "http://demowebshop.tricentis.com/login/checkoutasguest?returnUrl=%2Fcart");
         addtoCartHelper.goToShopCart();
         checkCoutriesHelper.cnCheck();
+        String URLCN = driver.getCurrentUrl();
+        Assert.assertEquals(URLCN, "http://demowebshop.tricentis.com/login/checkoutasguest?returnUrl=%2Fcart" );
         addtoCartHelper.goToShopCart();
         Assert.assertEquals(checkCoutriesHelper.getTotalPriceAttributeInnerText(),"825.00");
 

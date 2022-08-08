@@ -14,11 +14,8 @@ public class CheckCoutriesHelper extends ShopCartObj{
         getCountryLst().click();
         getUSAinList().click();
         setZipRnd();
-        getZipField().sendKeys();
         getTermsofServiceChckbx().click();
         getChekoutBtn().click();
-        String URL = driver.getCurrentUrl();
-        Assert.assertEquals(URL, "http://demowebshop.tricentis.com/login/checkoutasguest?returnUrl=%2Fcart" );
     }
 
     public void cnCheck(){
@@ -27,19 +24,15 @@ public class CheckCoutriesHelper extends ShopCartObj{
         setZipRnd();
         getTermsofServiceChckbx().click();
         getChekoutBtn().click();
-        String URL = driver.getCurrentUrl();
-        Assert.assertEquals(URL, "http://demowebshop.tricentis.com/login/checkoutasguest?returnUrl=%2Fcart" );
 
     }
 
-    public void uaCheck(){
+    public void uaCheck() {
         getCountryLst().click();
         getUAinList().click();
         setZipRnd();
         getTermsofServiceChckbx().click();
         getChekoutBtn().click();
-        String URL = driver.getCurrentUrl();
-        Assert.assertEquals(URL, "http://demowebshop.tricentis.com/login/checkoutasguest?returnUrl=%2Fcart" );
     }
 
     public String randomZip(){
