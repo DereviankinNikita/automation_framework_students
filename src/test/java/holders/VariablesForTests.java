@@ -8,6 +8,11 @@ import java.util.Properties;
 public class VariablesForTests  {
 
     public String mainUrl;
+    public String shopCartUrl;
+    public String cheapPCPage;
+    public String bookPage;
+    public  String checkoutPage;
+
 
 
     public void setConfigFromPropertyFile() {
@@ -20,7 +25,10 @@ public class VariablesForTests  {
             String envValue = System.getProperty("env");
             if (envValue == null || envValue.equals("stage") || envValue.isEmpty()) {
                 mainUrl = prop.getProperty("mainUrl");
-
+                shopCartUrl = prop.getProperty("shopCartUrl");
+                cheapPCPage = prop.getProperty("cheapPCPage");
+                bookPage = prop.getProperty("bookPage");
+                checkoutPage = prop.getProperty("checkoutPage");
             }
 
         } catch (IOException ex) {
