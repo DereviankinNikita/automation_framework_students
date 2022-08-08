@@ -14,6 +14,7 @@ public class TestRegistration extends TestInit {
     public void justStart(){
         goToSite();
     }
+    //smoke
     @Test
     public void regCheck() {
         goToSite();
@@ -24,7 +25,6 @@ public class TestRegistration extends TestInit {
         regPageHelper().setGmailRandomly();
         regPageHelper().setPassRandomly();
         regPageHelper().RegBtnClick();
-        System.out.println(regPageHelper().getResultAttributeInnerText());
         Assert.assertEquals(regPageHelper().getResultAttributeInnerText(),ResultTrue);
     }
 
