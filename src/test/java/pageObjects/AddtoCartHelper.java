@@ -19,7 +19,15 @@ public class AddtoCartHelper extends ShopCartObj{
         waitForElementClick(getCartHref());
     }
 
-
+   public void deleteFromCart() {
+       int i;
+       do {
+           i = getRemoveFromCartChckbxs().size();
+           getRemoveFromCartChckbx().click();
+           getUpdCartBtn().click();
+       }
+       while (i == 2);
+   }
 
 }
 

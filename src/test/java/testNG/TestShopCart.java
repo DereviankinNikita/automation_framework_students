@@ -19,13 +19,7 @@ public class TestShopCart extends TestInit {
         addtoCartHelper.addPctoCart();
         addtoCartHelper.addBooktoCart();
         addtoCartHelper.goToShopCart();
-        int i;
-        do{
-            i= addtoCartHelper.getRemoveFromCartChckbxs().size();
-            addtoCartHelper.getRemoveFromCartChckbx().click();
-            addtoCartHelper.getUpdCartBtn().click();
-        }
-        while (i==2);
+        addtoCartHelper.deleteFromCart();
         addtoCartHelper.getEmptyCart();
         addtoCartHelper.addPctoCart();
         addtoCartHelper.addBooktoCart();
