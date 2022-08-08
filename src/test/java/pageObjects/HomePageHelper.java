@@ -12,4 +12,5 @@ public class HomePageHelper extends HomePageElements {
     public void regClick(){
         getRegisterBtn().click();
     }
+    public void logClick(){getLogBtn().click();}
 }

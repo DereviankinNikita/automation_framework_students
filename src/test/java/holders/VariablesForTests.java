@@ -8,6 +8,8 @@ import java.util.Properties;
 public class VariablesForTests  {
 
     public String mainUrl;
+    public String loginMail;
+    public String loginPassword;
 
 
     public void setConfigFromPropertyFile() {
@@ -20,7 +22,8 @@ public class VariablesForTests  {
             String envValue = System.getProperty("env");
             if (envValue == null || envValue.equals("stage") || envValue.isEmpty()) {
                 mainUrl = prop.getProperty("mainUrl");
-
+                loginMail = prop.getProperty("loginMail");
+                loginPassword = prop.getProperty("loginPassword");
             }
 
         } catch (IOException ex) {
