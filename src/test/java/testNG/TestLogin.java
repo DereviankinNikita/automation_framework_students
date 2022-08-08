@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestLogin extends TestInit {
+    private String Result ="Test0808@gmail.com";
     @Test
     public void logCheck(){
         goToSite();
@@ -12,7 +13,7 @@ public class TestLogin extends TestInit {
         logPageHelper().setMailField(homePageObj().loginMail);
         logPageHelper().setPassField(homePageObj().loginPassword);
         logPageHelper().LogButtonClick();
-        Assert.assertEquals(logPageHelper().getAccountAttributeInnerText(),"Test0808@gmail.com");
+        Assert.assertEquals(logPageHelper().getAccountAttributeInnerText(),Result);
 
     }
 }
