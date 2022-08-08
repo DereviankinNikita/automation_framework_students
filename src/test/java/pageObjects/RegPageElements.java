@@ -16,8 +16,6 @@ public class RegPageElements extends DriverHolder {
     private String EmailInput = "(//*[@id=\"Email\"])";
     private String PassInput = "(//*[@class=\"text-box single-line password\"])[1]";
     private String PassConfirmInput = "(//*[@class=\"text-box single-line password\"])[2]";
-    //attributes
-    protected String innerText ="innerText";
 
     //Btn
     private String RegisterButton = "//*[@id=\"register-button\"]";

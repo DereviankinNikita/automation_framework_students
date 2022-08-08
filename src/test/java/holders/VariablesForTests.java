@@ -13,6 +13,8 @@ public class VariablesForTests  {
     public String bookPage;
     public  String checkoutPage;
 
+    public String loginMail;
+    public String loginPassword;
 
 
     public void setConfigFromPropertyFile() {
@@ -25,6 +27,8 @@ public class VariablesForTests  {
             String envValue = System.getProperty("env");
             if (envValue == null || envValue.equals("stage") || envValue.isEmpty()) {
                 mainUrl = prop.getProperty("mainUrl");
+                loginMail = prop.getProperty("loginMail");
+                loginPassword = prop.getProperty("loginPassword");
                 shopCartUrl = prop.getProperty("shopCartUrl");
                 cheapPCPage = prop.getProperty("cheapPCPage");
                 bookPage = prop.getProperty("bookPage");

@@ -17,6 +17,8 @@ public class DriverHolder extends VariablesForTests{
 
     protected WebDriver driver;
     protected Actions actions;
+    //attributes
+    protected String innerText ="innerText";
     Duration timeToWait = Duration.ofSeconds(15);
 
 
