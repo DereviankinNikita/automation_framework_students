@@ -29,5 +29,23 @@ public class TestFilterByPrice extends TestInit {
         String actualStringFilterMax = driver.findElement(By.xpath("//*[@class = 'selected-price-range']")).getText();
         String expectedStringFilterMax = "Over 50.00";
         assertTrue(actualStringFilterButtonAccessories.contains(expectedStringFilterButtonAccessories));
+        filterByPriceHelper.clickRemoveFilter();
+    }
+    @Test
+    public void buttonFilterAccessories(){
+        gotoHomePage();
+        CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
+        categoriesPageHelper.clickSubcategoryAccessories();
+        FilterByPriceHelper filterByPriceHelper = new FilterByPriceHelper(driver);
+        filterByPriceHelper.clickAccessoriesPriseMin();
+        String actualStringAccessoriesMin = driver.findElement(By.xpath("//*[@class = 'selected-price-range']")).getText();
+        String expectedStringAccessoriesMin = "Under 100.00";
+        assertTrue(actualStringAccessoriesMin.contains(expectedStringAccessoriesMin));
+        filterByPriceHelper.clickRemoveFilter();
+        filterByPriceHelper.clickAccessoriesPriseMax();
+        String actualStingAccessoriesMax = driver.findElement(By.xpath("//*[@class = 'selected-price-range']")).getText();
+        String expectedStringAccessoriesMax = "";
+        assertTrue(actualStingAccessoriesMax.contains(expectedStringAccessoriesMax));
+        filterByPriceHelper.clickRemoveFilter();
     }
 }
