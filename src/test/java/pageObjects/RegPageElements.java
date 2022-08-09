@@ -20,7 +20,8 @@ public class RegPageElements extends DriverHolder {
     //Btn
     private String registerButton = "//*[@id=\"register-button\"]";
     //nextPage
-    private String result = "//*[@class=\"result\"]";
+    private String positiveResult = "//*[@class=\"result\"]";
+    private String negativeResult = "";
 
     //WebElements
     public WebElement getGMale(){return getElByXpath(genderMale);}
@@ -32,6 +33,9 @@ public class RegPageElements extends DriverHolder {
     public WebElement getPassConfField(){return getElByXpath(passConfirmInput);}
     public WebElement getRegisterBtn(){return getElByXpath(registerButton);}
     //nextPage
-    public WebElement getResult(){return getElByXpath(result);}
+    public WebElement getPositiveResult(){return getElByXpath(positiveResult);}
 
+    public Boolean getNegativeResult(String result){
+        return getElByXpath("//*[contains(text(),'"+result+"')]").isEnabled();
+    }
 }

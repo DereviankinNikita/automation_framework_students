@@ -55,8 +55,9 @@ public class RegPageHelper extends RegPageElements {
     public void RegBtnClick(){
         getRegisterBtn().click();
     }
-    public String getResultAttributeInnerText(){
-        return getResult().getAttribute(innerText);
+    public String getResultTrueAttributeInnerText(){
+        return getPositiveResult().getAttribute(innerText);
     }
+
 
 }
