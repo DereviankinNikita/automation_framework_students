@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reg suite">
+    <test name="Test Basics 1">
+        <parameter name="LoginName" value="tester456@gmail.com"/>
+        <parameter name="password" value="test@123"/>
+        <parameter name="Result" value="Test0808@gmail.com"></parameter>
+        <classes>
+            <class name="testNG.TestLogin"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->

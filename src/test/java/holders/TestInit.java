@@ -1,5 +1,6 @@
 package holders;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageObjects.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,7 +19,7 @@ public class TestInit {
     public WebDriver driver;
     public Actions action ;
 
-    @BeforeClass
+    @BeforeMethod
     public void setupTest() {
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
@@ -37,14 +38,14 @@ public class TestInit {
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
     }
     //
-    @AfterClass
-    void tearDown()
+    @AfterMethod
+    public void tearDown()
     {
-        //driver.quit();
+        driver.quit();
     }
 
     //wait
-    void sleep(int s)
+    public void sleep(int s)
     {
         try {
             Thread.sleep(s*1000);

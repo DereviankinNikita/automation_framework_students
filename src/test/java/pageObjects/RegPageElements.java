@@ -9,29 +9,29 @@ public class RegPageElements extends DriverHolder {
         super(driver);
     }
     //locators
-    private String GenderMale = "//*[@id='gender-male']";
-    private String GenderFemale = "//*[@id='gender-female']";
-    private String FirstNameInput = "(//*[@class=\"text-box single-line\"])[1]";
-    private String LastNameInput = "(//*[@class=\"text-box single-line\"])[2]";
-    private String EmailInput = "(//*[@id=\"Email\"])";
-    private String PassInput = "(//*[@class=\"text-box single-line password\"])[1]";
-    private String PassConfirmInput = "(//*[@class=\"text-box single-line password\"])[2]";
+    private String genderMale = "//*[@id='gender-male']";
+    private String genderFemale = "//*[@id='gender-female']";
+    private String firstNameInput = "(//*[@class=\"text-box single-line\"])[1]";
+    private String lastNameInput = "(//*[@class=\"text-box single-line\"])[2]";
+    private String emailInput = "(//*[@id=\"Email\"])";
+    private String passInput = "(//*[@class=\"text-box single-line password\"])[1]";
+    private String passConfirmInput = "(//*[@class=\"text-box single-line password\"])[2]";
 
     //Btn
-    private String RegisterButton = "//*[@id=\"register-button\"]";
+    private String registerButton = "//*[@id=\"register-button\"]";
     //nextPage
-    private String Result = "//*[@class=\"result\"]";
+    private String result = "//*[@class=\"result\"]";
 
     //WebElements
-    public WebElement getGMale(){return getElByXpath(GenderMale);}
-    public WebElement getGFamale(){return  getElByXpath(GenderFemale);}
-    public WebElement getLastNameField(){return getElByXpath(LastNameInput);}
-    public WebElement getFirstNameField(){return getElByXpath(FirstNameInput);}
-    public WebElement getEmailField(){return getElByXpath(EmailInput);}
-    public WebElement getPassField(){return getElByXpath(PassInput);}
-    public WebElement getPassConfField(){return getElByXpath(PassConfirmInput);}
-    public WebElement getRegisterBtn(){return getElByXpath(RegisterButton);}
+    public WebElement getGMale(){return getElByXpath(genderMale);}
+    public WebElement getGFamale(){return  getElByXpath(genderFemale);}
+    public WebElement getLastNameField(){return getElByXpath(lastNameInput);}
+    public WebElement getFirstNameField(){return getElByXpath(firstNameInput);}
+    public WebElement getEmailField(){return getElByXpath(emailInput);}
+    public WebElement getPassField(){return getElByXpath(passInput);}
+    public WebElement getPassConfField(){return getElByXpath(passConfirmInput);}
+    public WebElement getRegisterBtn(){return getElByXpath(registerButton);}
     //nextPage
-    public WebElement getResult(){return getElByXpath(Result);}
+    public WebElement getResult(){return getElByXpath(result);}
 
 }
