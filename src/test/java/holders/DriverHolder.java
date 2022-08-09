@@ -102,6 +102,30 @@ public class DriverHolder extends VariablesForTests{
         return new DriverHolder(driver);
     }
 
+    public DriverHolder goToShopCart(){
+        driver.get(shopCartUrl);
+        waitForPageLoad();
+        return new DriverHolder(driver);
+    }
+
+    public DriverHolder goToCheapPcPage(){
+        driver.get(cheapPCPage);
+        waitForPageLoad();
+        return new DriverHolder(driver);
+    }
+
+    public DriverHolder goToBookPage(){
+        driver.get(bookPage);
+        waitForPageLoad();
+        return new DriverHolder(driver);
+    }
+
+    public DriverHolder goToCheckoutPage(){
+        driver.get(checkoutPage);
+        waitForPageLoad();
+        return new DriverHolder(driver);
+    }
+
 
 
 
