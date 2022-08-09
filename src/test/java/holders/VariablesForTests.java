@@ -8,6 +8,11 @@ import java.util.Properties;
 public class VariablesForTests  {
 
     public String mainUrl;
+    public String shopCartUrl;
+    public String cheapPCPage;
+    public String bookPage;
+    public  String checkoutPage;
+
     public String loginMail;
     public String loginPassword;
 
@@ -24,6 +29,10 @@ public class VariablesForTests  {
                 mainUrl = prop.getProperty("mainUrl");
                 loginMail = prop.getProperty("loginMail");
                 loginPassword = prop.getProperty("loginPassword");
+                shopCartUrl = prop.getProperty("shopCartUrl");
+                cheapPCPage = prop.getProperty("cheapPCPage");
+                bookPage = prop.getProperty("bookPage");
+                checkoutPage = prop.getProperty("checkoutPage");
             }
 
         } catch (IOException ex) {
