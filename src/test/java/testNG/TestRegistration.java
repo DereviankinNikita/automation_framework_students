@@ -36,7 +36,7 @@ public class TestRegistration extends TestInit {
     protected Object[][] getData(){
         Object[][] data = new Object[6][6];
         //smoke
-        data[0][0]=regPageHelper().male;
+        data[0][0]= regPageHelper().male;
         data[0][1]= homePageObj().randomStringSymbols(6);
         data[0][2]= homePageObj().randomStringSymbols(6);
         data[0][3]= regPageHelper().randomMail();
