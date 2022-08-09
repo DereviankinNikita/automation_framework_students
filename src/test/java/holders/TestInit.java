@@ -44,7 +44,7 @@ public class TestInit {
     }
 
     //wait
-    void sleep(int s)
+    public void sleep(int s)
     {
         try {
             Thread.sleep(s*1000);
