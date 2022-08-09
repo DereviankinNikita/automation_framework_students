@@ -1,9 +1,7 @@
-package Holder;
+package holders;
 
-import Holder.PageConstructors;
-import Holder.Urls;
-import Obj.HomePageObj;
-import Obj.HomePageObjHelper;
+import org.testng.annotations.BeforeMethod;
+import pageObjects.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -16,13 +14,12 @@ import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
-public class TestInit extends PageConstructors {
-    protected WebDriver driver;
-    protected Actions action ;
+public class TestInit {
+    public WebDriver driver;
+    public Actions action ;
 
     @BeforeClass
-    public void setupTest()
-    {
+    public void setupTest() {
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -56,16 +53,29 @@ public class TestInit extends PageConstructors {
             e.printStackTrace();
         }
     }
+    public void goToSite(){
+        driver.get(regPageElements().mainUrl);
+    }
+
+
     //constructors
-    protected Urls urls(){
-       return new Urls(driver);
+
+    protected HomePageElements homePageObj(){
+        return new HomePageElements(driver);
     }
-    protected HomePageObj homePageObj(){
-       return new HomePageObj(driver);
+    protected HomePageHelper homePageObjHelper(){
+        return new HomePageHelper(driver);
     }
-    protected HomePageObjHelper homePageObjHelper(){
-        return new HomePageObjHelper(driver);
+    //reg
+    protected RegPageElements regPageElements(){
+        return new RegPageElements(driver);
     }
+    protected RegPageHelper regPageHelper(){
+        return new RegPageHelper(driver);
+    }
+    //log
+    protected LogPageElements logPageElements(){return new LogPageElements(driver);}
+    protected LogPageHelper logPageHelper(){return new LogPageHelper(driver);}
     public String website = "http://demowebshop.tricentis.com/";
 
     public void gotoHomePage()

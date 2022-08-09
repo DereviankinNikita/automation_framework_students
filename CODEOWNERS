@@ -1,0 +1,9 @@
+# Every line is a file pattern that is followed by one or more code owners.
+# Lines starting with # are comments.
+
+# This user will be the default owner for everything in the repo.
+*                        @DereviankinNikita
+# review when someone opens a pull request.
+*.java                    @DereviankinNikita
+
+
