@@ -1,4 +1,4 @@
-package Obj;
+package pageObjects;
 
 import org.checkerframework.checker.units.qual.K;
 import org.openqa.selenium.Keys;

@@ -1,6 +1,6 @@
-package TestNG;
+package testNG;
 
-import Holder.TestInit;
+import holders.TestInit;
 import org.testng.annotations.Test;
 
 public class TestHomePage extends TestInit {
@@ -8,7 +8,7 @@ public class TestHomePage extends TestInit {
     @Test
     public void check()
     {
-        urls().gotoHome();
+        goToSite();
         homePageObjHelper().regClick();
     }
 
