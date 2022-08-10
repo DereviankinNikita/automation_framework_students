@@ -28,7 +28,7 @@ public class TestFilterByPrice extends TestInit {
         filterByPriceHelper.clickBooksPriceMax();
         String actualStringFilterMax = driver.findElement(By.xpath("//*[@class = 'selected-price-range']")).getText();
         String expectedStringFilterMax = "Over 50.00";
-        assertTrue(actualStringFilterButtonAccessories.contains(expectedStringFilterButtonAccessories));
+        assertTrue(actualStringFilterMax.contains(expectedStringFilterMax));
         filterByPriceHelper.clickRemoveFilter();
     }
     @Test
