@@ -3,10 +3,7 @@ package testNG;
 import holders.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.AddtoCartHelper;
-import pageObjects.CheckCoutriesHelper;
-import pageObjects.GiftCardCouponHelper;
-import pageObjects.ShippingPriceHelper;
+import pageObjects.*;
 
 public class TestShopCart extends TestInit {
 
@@ -46,6 +43,7 @@ public class TestShopCart extends TestInit {
         CheckCoutriesHelper checkCoutriesHelper = new CheckCoutriesHelper(driver);
         GiftCardCouponHelper giftCardCouponHelper = new GiftCardCouponHelper(driver);
         ShippingPriceHelper shippingPriceHelper = new ShippingPriceHelper(driver);
+        QtyCheckHelper qtyCheckHelper = new QtyCheckHelper(driver);
         addtoCartHelper.addPctoCart();
         addtoCartHelper.addBooktoCart();
         addtoCartHelper.goToShopCart();
@@ -80,6 +78,9 @@ public class TestShopCart extends TestInit {
         addtoCartHelper.getEmptyStateList();
         addtoCartHelper.getEstimateShippingBtn().click();
         //shippingPriceHelper.checkPrice(); bug
+        qtyCheckHelper.qtyCheck();
+        qtyCheckHelper.summPrice();
+        //qtyCheckHelper.totalPrice(); bug
 
 
     }

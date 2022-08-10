@@ -35,6 +35,11 @@ public class ShopCartObj extends DriverHolder {
     private String couponField = "//*[@name='discountcouponcode']";
     private String giftCardField = "//*[@name='giftcardcouponcode']";
     private String shippingPrice = "//*[@class='option-name']";
+    private String qty = "(//*[contains(@name, 'itemquantity')])[2]";
+    private String subTotal = "(//*[@class='product-subtotal'])[2]";
+    private String productPrice = "//*[@class='product-price']";
+    private String totalProductPrice = "//*[@class='product-price order-total']";
+
 
     protected String innerText = "innerText";
 
@@ -84,6 +89,9 @@ public class ShopCartObj extends DriverHolder {
     public WebElement getZipField(){return getElByXpath(zipField);}
 
     public WebElement getTotalPrice(){return  getElByXpath(totalPrice);}
+    public  WebElement getQty(){return getElByXpath(qty);}
+    public WebElement getSubTotal(){return getElByXpath(subTotal);}
+    public List<WebElement> getProductPrice(){return getElsByXpath(productPrice);}
 
     public List<WebElement> getItemHref() {return getElsByXpath(itemHref);}
 

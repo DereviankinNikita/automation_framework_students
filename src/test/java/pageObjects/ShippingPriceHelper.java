@@ -15,13 +15,15 @@ public class ShippingPriceHelper extends ShopCartObj{
         String str = getShippingPriceAttributeInnerText(i);
         String[] number = str.split("\\(", 2);
         number = number[1].split("\\)");
-        System.out.printf(number[0]);
+
         return number;
     }
     public void checkPrice(){
         for(int y = 0; y < 3; y++){
+
+
             Assert.assertTrue( Double.parseDouble(split(i)[0]) >Double.parseDouble("0.00"));
-            System.out.println(split(i)[0]);
+
         }
 
 
