@@ -38,9 +38,9 @@ public class TestInit {
     }
     //
     @AfterClass
-    public void tearDown()
+    void tearDown()
     {
-        driver.quit();
+        //driver.quit();
     }
 
     //wait
@@ -76,10 +76,4 @@ public class TestInit {
     //log
     protected LogPageElements logPageElements(){return new LogPageElements(driver);}
     protected LogPageHelper logPageHelper(){return new LogPageHelper(driver);}
-    public String website = "http://demowebshop.tricentis.com/";
-
-    public void gotoHomePage()
-    {
-        driver.get(website);
-    }
 }

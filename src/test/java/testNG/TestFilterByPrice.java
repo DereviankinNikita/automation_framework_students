@@ -11,7 +11,7 @@ import static org.testng.Assert.assertTrue;
 public class TestFilterByPrice extends TestInit {
     @Test
     public void buttonFilterBooks(){
-        gotoHomePage();
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickCategoryBooks();
         FilterByPriceHelper filterByPriceHelper = new FilterByPriceHelper(driver);
@@ -33,7 +33,7 @@ public class TestFilterByPrice extends TestInit {
     }
     @Test
     public void buttonFilterAccessories(){
-        gotoHomePage();
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickSubcategoryAccessories();
         FilterByPriceHelper filterByPriceHelper = new FilterByPriceHelper(driver);
