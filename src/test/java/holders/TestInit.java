@@ -38,10 +38,7 @@ public class TestInit {
     }
     //
     @AfterClass
-    public void tearDown()
-    {
-        driver.quit();
-    }
+   // public void tearDown() {driver.quit();}
 
     //wait
     public void sleep(int s)
