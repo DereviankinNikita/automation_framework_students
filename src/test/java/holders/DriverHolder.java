@@ -47,7 +47,7 @@ public class DriverHolder extends VariablesForTests{
         return ( new WebDriverWait(driver, timeToWait)
                 .until(ExpectedConditions.elementToBeClickable(By.xpath(element))));
     }
-    void sleep(int s)
+    public void sleep(int s)
     {
         try {
             Thread.sleep(s*1000);
