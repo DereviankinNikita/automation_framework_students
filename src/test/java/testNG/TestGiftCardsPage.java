@@ -1,4 +1,4 @@
-package TestNG;
+package testNG;
 
 import holders.TestInit;
 import org.openqa.selenium.By;
