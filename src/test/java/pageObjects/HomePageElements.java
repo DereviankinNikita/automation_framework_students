@@ -19,9 +19,10 @@ public class HomePageObj extends DriverHolder {
 
 
 
-    public WebElement SubscribeBtn() {return getElByXpath(SubscribeButton); }
-    public  WebElement RegisterBtn(){return getElByXpath(RegisterButton);}
-    public  WebElement LogBtn(){return getElByXpath(RegisterButton);}
+
     public WebElement getGiftCardsBtn(){return  getElsByXpath(giftCardsButton).get(0);}
     public WebElement getComputersButton(){return  getElsByXpath(computersButton).get(0);}
+    public WebElement getSubscribeBtn() { return getElByXpath(SubscribeButton); }
+    public  WebElement getRegisterBtn(){return getElByXpath(RegisterButton);}
+    public  WebElement getLogBtn(){return getElByXpath(LogButton);}
 }
