@@ -1,9 +1,7 @@
-package TestNG;
+package testNG;
 
-import Holder.TestInit;
-import Obj.CategoriesPageHelper;
-import Obj.HomePageObjHelper;
-import org.checkerframework.checker.units.qual.C;
+import holders.TestInit;
+import pageObjects.CategoriesPageHelper;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package testNG;
+package TestNG;
 
 import holders.TestInit;
 import pageObjects.HomePageHelper;

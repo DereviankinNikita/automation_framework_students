@@ -1,10 +1,8 @@
-package TestNG;
+package testNG;
 
-import Holder.TestInit;
-import Obj.CategoriesPageHelper;
-import Obj.ComputersPageHelper;
-import Obj.HomePageObjHelper;
-import org.apache.commons.compress.harmony.pack200.PackingUtils;
+import holders.TestInit;
+import pageObjects.CategoriesPageHelper;
+import pageObjects.ComputersPageHelper;
 import org.testng.annotations.Test;
 
 public class TestComputerConstructor extends TestInit {
