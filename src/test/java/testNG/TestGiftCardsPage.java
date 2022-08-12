@@ -1,9 +1,9 @@
 package TestNG;
 
-import Holder.TestInit;
-import Obj.HomePageObjHelper;
+import holders.TestInit;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import pageObjects.HomePageHelper;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,9 +11,9 @@ import static org.testng.Assert.assertTrue;
 public class TestGiftCardsPage extends TestInit {
 
     public void testGiftCardsPage() {
-        HomePageObjHelper homePageObjHelper = new HomePageObjHelper(driver);
+        HomePageHelper homePageObjHelper = new HomePageHelper(driver);
         gotoHomePage();
-        homePageObjHelper.clickGiftCards();
+        homePageObjHelper.giftCardsClick();
         String virtualCards25 = driver.findElements(By.xpath("//*[@href='/25-virtual-gift-card']")).get(1).getText();
         assertTrue(virtualCards25.contains("$25 Virtual Gift Card"));
         String physicalCards50 = driver.findElements(By.xpath("//*[@href='/50-physical-gift-card']")).get(1).getText();
