@@ -10,12 +10,12 @@ public class GiftCardCouponHelper extends ShopCartObj{
     }
 
     public void couponCheck(){
-        getCouponField().sendKeys(randomString(20));
+        getCouponField().sendKeys(randomStringSymbols(20));
         getCouponBtn().click();
         getErrorMessage();
     }
     public void giftCardCheck(){
-        getGiftCardField().sendKeys(randomString(20));
+        getGiftCardField().sendKeys(randomStringSymbols(20));
         getGiftCardBtn().click();
         getErrorMessage();
     }

@@ -69,7 +69,7 @@ public class TestShopCart extends TestInit {
         String contShop = driver.getCurrentUrl();
         Assert.assertEquals(contShop, "http://demowebshop.tricentis.com/");
         addtoCartHelper.goToShopCart();
-        addtoCartHelper.getZipField().sendKeys(addtoCartHelper.randomString(10));
+        addtoCartHelper.getZipField().sendKeys(addtoCartHelper.randomStringSymbols(10));
         addtoCartHelper.getTermsofServiceChckbx().click();
         addtoCartHelper.getChekoutBtn().click();
         // addtoCartHelper.getErrorMessage(); bug

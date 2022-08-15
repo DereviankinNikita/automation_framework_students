@@ -8,23 +8,26 @@ public class LogPageElements extends DriverHolder {
     public LogPageElements(WebDriver driver) {
         super(driver);
     }
-    private String MailField = "//*[@id=\"Email\"]";
-    private String PassField = "//*[@id=\"Password\"]";
-    private String LogInButton = "//*[@class=\"button-1 login-button\"]";
-    private String Account = "(//*[@class=\"account\"])[1]";
+    private String mailField = "//*[@id=\"Email\"]";
+    private String passField = "//*[@id=\"Password\"]";
+    private String logInButton = "//*[@class=\"button-1 login-button\"]";
+    //errors
+    private String validationError = "//*[@class=\"validation-summary-errors\"]";
+
+
 
     public WebElement getMailField(){
-        return getElByXpath(MailField);
+        return getElByXpath(mailField);
     }
     public WebElement getPassField(){
-        return getElByXpath(PassField);
+        return getElByXpath(passField);
     }
     public WebElement getLogInButton(){
-        return getElByXpath(LogInButton);
+        return getElByXpath(logInButton);
     }
-    public WebElement getAccount(){
-        return getElByXpath(Account);
-    }
+    //errors
+    public WebElement getValidationError(){return getElByXpath(validationError);}
+
 
 
 

@@ -8,10 +8,10 @@ public class RegPageHelper extends RegPageElements {
     public RegPageHelper(WebDriver driver) {
         super(driver);
     }
-    public String Male="Male";
-    public String Female="Female";
+    public String male ="Male";
+    public String female ="Female";
 
-    public void GenderChoose(String gender){
+    public void genderChoose(String gender){
         if(gender =="Male"){
             getGMale().click();
         }
@@ -20,11 +20,15 @@ public class RegPageHelper extends RegPageElements {
         }
     }
     public void setFirstNameRandomly(){
-        getFirstNameField().sendKeys(randomString(6));
+        getFirstNameField().sendKeys(randomStringSymbols(6));
+    }
+    public void setFirstName(String name){
+        getFirstNameField().sendKeys(name);
     }
     public void setLastNameRandomly(){
-        getLastNameField().sendKeys(randomString(6));
+        getLastNameField().sendKeys(randomStringSymbols(6));
     }
+    public void setLastName(String name){getLastNameField().sendKeys(name);}
     //mail
     public String randomMail(){
         return Clock.systemUTC().instant().toString()
@@ -33,21 +37,27 @@ public class RegPageHelper extends RegPageElements {
     public void setGmailRandomly(){
         getEmailField().sendKeys(randomMail());
     }
+    public void setGmail(String gmail){getEmailField().sendKeys(gmail);}
     //pass
-    public String setRandomPass(){
+    public void setPass(String pass){
+        getPassField().sendKeys(pass);
+        getPassConfField().sendKeys(pass);
+    }
+    public String randomPass(){
         return Clock.systemUTC().instant().toString()
                 .replaceAll("[^0-9]", "");
     }
     public void setPassRandomly(){
-        String pass = setRandomPass();
+        String pass = randomPass();
         getPassField().sendKeys(pass);
         getPassConfField().sendKeys(pass);
     }
     public void RegBtnClick(){
         getRegisterBtn().click();
     }
-    public String getResultAttributeInnerText(){
-        return getResult().getAttribute(innerText);
+    public String getResultTrueAttributeInnerText(){
+        return getPositiveResult().getAttribute(innerText);
     }
+
 
 }
