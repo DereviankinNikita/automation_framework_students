@@ -12,7 +12,7 @@ public class TestGiftCardsPage extends TestInit {
 
     public void testGiftCardsPage() {
         HomePageHelper homePageObjHelper = new HomePageHelper(driver);
-        gotoHomePage();
+        goToSite();
         homePageObjHelper.giftCardsClick();
         String virtualCards25 = driver.findElements(By.xpath("//*[@href='/25-virtual-gift-card']")).get(1).getText();
         assertTrue(virtualCards25.contains("$25 Virtual Gift Card"));
