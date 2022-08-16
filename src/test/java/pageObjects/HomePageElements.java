@@ -15,6 +15,7 @@ public class HomePageElements extends DriverHolder {
     private String LogButton = "//*[@class='ico-login']";
     private String giftCardsButton = "//*[@href='/gift-cards']";
     private String computersButton = "//*[@href='/computers']";
+    private String account = "(//*[@class=\"account\"])[1]";
 
     public WebElement getSubscribeBtn()
     {
@@ -25,4 +26,7 @@ public class HomePageElements extends DriverHolder {
     public WebElement SubscribeBtn() {return getElByXpath(SubscribeButton); }
     public WebElement getGiftCardsBtn(){return  getElsByXpath(giftCardsButton).get(0);}
     public WebElement getComputersButton(){return  getElsByXpath(computersButton).get(0);}
+    public WebElement getAccount(){
+        return getElByXpath(account);
+    }
 }
