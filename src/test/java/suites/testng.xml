@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Reg/Log suite">
+    <test name="Test Log">
+        <classes>
+            <class name="testNG.TestLogin"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Test Reg">
+        <classes>
+            <class name="testNG.TestRegistration"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->

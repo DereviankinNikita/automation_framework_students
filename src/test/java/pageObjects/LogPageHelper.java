@@ -13,7 +13,9 @@ public class LogPageHelper extends LogPageElements{
     public void LogButtonClick(){
         getLogInButton().click();
     }
-    public String getAccountAttributeInnerText(){
-        return getAccount().getAttribute(innerText);
+    public String getValidationErrorAttributeInnerText(){
+        return getValidationError().getAttribute(innerText);
     }
+
+
 }

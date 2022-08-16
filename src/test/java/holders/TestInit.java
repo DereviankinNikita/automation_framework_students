@@ -1,5 +1,6 @@
 package holders;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageObjects.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,7 +19,7 @@ public class TestInit {
     public WebDriver driver;
     public Actions action ;
 
-    @BeforeClass
+    @BeforeMethod
     public void setupTest() {
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
@@ -37,7 +38,7 @@ public class TestInit {
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
     }
     //
-    @AfterClass
+    @AfterMethod
     public void tearDown()
     {
         driver.quit();
@@ -76,10 +77,4 @@ public class TestInit {
     //log
     protected LogPageElements logPageElements(){return new LogPageElements(driver);}
     protected LogPageHelper logPageHelper(){return new LogPageHelper(driver);}
-    public String website = "http://demowebshop.tricentis.com/";
-
-    public void gotoHomePage()
-    {
-        driver.get(website);
-    }
 }

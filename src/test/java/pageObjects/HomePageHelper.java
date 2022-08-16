@@ -13,5 +13,8 @@ public class HomePageHelper extends HomePageElements {
         getRegisterBtn().click();
     }
     public void logClick(){getLogBtn().click();}
+    public String getAccountAttributeInnerText(){
+        return getAccount().getAttribute(innerText);
+    }
     public void giftCardsClick(){getGiftCardsBtn().click();}
 }
