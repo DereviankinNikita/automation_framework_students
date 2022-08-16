@@ -10,6 +10,7 @@ import static org.testng.Assert.assertTrue;
 public class TestCategories extends TestInit {
     @Test
     public void buttonBooks(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickCategoryBooks();
         String actualStringBooks = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -19,6 +20,7 @@ public class TestCategories extends TestInit {
 
     @Test
     public void buttonComputers(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickCategoryComputers();
         String actualStringComputers = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -28,6 +30,7 @@ public class TestCategories extends TestInit {
 
     @Test
     public void buttonDesktops(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickSubcategoryDesktops();
         String actualStringDesktops = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -36,6 +39,7 @@ public class TestCategories extends TestInit {
     }
     @Test
     public void buttonNotebooks(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickSubcategoryNotebooks();
         String actualStringNotebooks = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -53,6 +57,7 @@ public class TestCategories extends TestInit {
     }
     @Test
     public void buttonElectronics(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickCategoryElectronics();
         String actualStringElectronics = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -61,6 +66,7 @@ public class TestCategories extends TestInit {
     }
     @Test
     public void buttonCameraPhoto(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickSubcategoryCameraPhoto();
         String actualStringCameraPhoto = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -69,6 +75,7 @@ public class TestCategories extends TestInit {
     }
     @Test
     public void buttonCellPhones(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickSubcategoryCellPhones();
         String actualStringCellPhones = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -77,6 +84,7 @@ public class TestCategories extends TestInit {
     }
     @Test
     public void buttonApparelAndShoes(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickCategoryApparelEndShoes();
         String actualStringApparelAndShoes = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -85,6 +93,7 @@ public class TestCategories extends TestInit {
     }
     @Test
     public void buttonDigitalDownloads(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickDigitalDownloads();
         String actualStringDigitalDownloads = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -93,6 +102,7 @@ public class TestCategories extends TestInit {
     }
     @Test
     public void buttonJewelry(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickJewelry();
         String actualStringJewelry = driver.findElement(By.xpath("//*[@class='page-title']")).getText();
@@ -101,6 +111,7 @@ public class TestCategories extends TestInit {
         }
     @Test
     public void buttonGiftCards(){
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickGiftCards();
         String actualStringGiftCards = driver.findElement(By.xpath("//*[@class='page-title']")).getText();

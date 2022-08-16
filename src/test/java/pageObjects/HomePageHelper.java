@@ -16,4 +16,5 @@ public class HomePageHelper extends HomePageElements {
     public String getAccountAttributeInnerText(){
         return getAccount().getAttribute(innerText);
     }
+    public void giftCardsClick(){getGiftCardsBtn().click();}
 }
