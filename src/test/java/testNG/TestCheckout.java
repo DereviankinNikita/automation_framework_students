@@ -8,7 +8,7 @@ import pageObjects.AddtoCartHelper;
 import pageObjects.CheckCoutriesHelper;
 import pageObjects.CheckoutPageHelper;
 import org.openqa.selenium.By;
-import static org.testng.Assert.assertTrue;
+
 
 
 
@@ -64,11 +64,6 @@ public class TestCheckout extends TestInit {
         String expectedResult = "Thank you";
         Assert.assertEquals(actualResult, expectedResult);
 
-        /*sleep(3);
-        String expectedUrl = "http://demowebshop.tricentis.com/checkout/completed/";
-        String actualUrl = driver.getCurrentUrl();
-
-        Assert.assertEquals(actualUrl, expectedUrl);*/
 
 
     }
