@@ -1,7 +1,6 @@
 package testNG;
 
 import holders.TestInit;
-import pageObjects.CategoriesPageHelper;
 import pageObjects.FilterByPriceHelper;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
