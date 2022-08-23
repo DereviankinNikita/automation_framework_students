@@ -44,7 +44,7 @@ public class TestCategories extends TestInit {
     }
     @Test
     public void buttonAccessories(){
-        gotoHomePage();
+        goToSite();
         CategoriesPageHelper categoriesPageHelper = new CategoriesPageHelper(driver);
         categoriesPageHelper.clickSubcategoryAccessories();
         String actualStringAccessories = driver.findElement(By.xpath("//*[@class='page-title']")).getText();

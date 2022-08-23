@@ -25,7 +25,7 @@ public class FilterByPriceObj extends DriverHolder {
 
     private String buttonJewelryPriceRangeMin = "//*[@href='http://demowebshop.tricentis.com/jewelry?price=0-500']";
     private String buttonJewelryPriceRangeAverage = "//*[@href='http://demowebshop.tricentis.com/jewelry?price=500-700']";
-    private String buttonJewelryPriceRangeMax = "//*[@href='http://demowebshop.tricentis.com/jewelry?price=500-700']";
+    private String buttonJewelryPriceRangeMax = "//*[@href='http://demowebshop.tricentis.com/jewelry?price=700-3000']";
 
     private String buttonRemovePriceRangeFilter = "//*[@class='remove-price-range-filter']";
 
